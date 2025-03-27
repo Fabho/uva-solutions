@@ -9,6 +9,7 @@
     "xstring": "cpp",
     "initializer_list": "cpp",
     "xtree": "cpp",
-    "cstdio": "cpp"
+    "cstdio": "cpp",
+    "istream": "cpp"
   }
 }
