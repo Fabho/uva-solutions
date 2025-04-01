@@ -12,6 +12,7 @@
     "cstdio": "cpp",
     "istream": "cpp",
     "utility": "cpp",
-    "set": "cpp"
+    "set": "cpp",
+    "unordered_map": "cpp"
   }
 }
