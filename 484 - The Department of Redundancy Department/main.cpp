@@ -1,24 +1,25 @@
-#include <unordered_map>
-#include <iostream>
+#include <cstdio>
+#include <map>
+#include <vector>
+#include <algorithm>
+
 using namespace std;
 
 int main()
 {
-    // Initializer List
-    unordered_map<string, int> unordered_map1 = {
-        {"Ane", 0},
-        {"Zne", -1},
-        {"One", 1},
-        {"Two", 2},
-        {"Three", 3},
-    };
+    map<int, int> numbers;
+    vector<int> order;
+    int number;
 
-    for (const auto &key_value : unordered_map1)
+    while (scanf("%d", &number) != EOF)
     {
-        string key = key_value.first;
-        int value = key_value.second;
-
-        cout << key << " - " << value << endl;
+        numbers[number]++;
+        if (std::find(order.begin(), order.end(), number) == order.end())
+            order.push_back(number);
     }
+
+    for (int i = 0; i < order.size(); i++)
+        printf("%d %d\n", order[i], numbers[order[i]]);
+
     return 0;
 }
