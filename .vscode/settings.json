@@ -11,6 +11,7 @@
     "xtree": "cpp",
     "cstdio": "cpp",
     "istream": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "set": "cpp"
   }
 }
